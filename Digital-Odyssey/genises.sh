@@ -13,13 +13,15 @@ RESET=$(tput sgr0)
 clear
 
 # Stylized GENESIS Logo
-echo ""
-echo "${CYAN}${BOLD} ██████  ███████ ███    ██ ███████ ███████ ██ ███████ "
-echo "██       ██      ████   ██ ██      ██      ██ ██      "
-echo "██   ███ █████   ██ ██  ██ █████   ███████ ██ █████   "
-echo "██    ██ ██      ██  ██ ██ ██           ██ ██ ██      "
-echo " ██████  ███████ ██   ████ ███████ ███████ ██ ███████ ${RESET}"
-echo ""
+echo -e "${CYAN}${BOLD}"
+cat << "EOF"
+  ____ _____ _   _ _____ ____ ___ ____  
+ / ___| ____| \ | | ____/ ___|_ _/ ___| 
+| |  _|  _| |  \| |  _| \___ \| |\___ \ 
+| |_| | |___| |\  | |___ ___) | | ___) |
+ \____|_____|_| \_|_____|____/___|____/
+EOF
+echo -e "${RESET}\n"
 
 # Simulate typing effect
 type_text() {
@@ -77,6 +79,4 @@ type_text "${YELLOW}${BOLD}Your first task is simple: understand your surroundin
 echo ""
 type_text "But be warned—this world does not give up its secrets easily."
 echo ""
-
-
 
